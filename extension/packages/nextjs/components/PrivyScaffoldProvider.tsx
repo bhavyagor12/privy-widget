@@ -1,11 +1,11 @@
 "use client";
-
+import PropsWithChildren from "react";
 import { PrivyProvider } from "@privy-io/react-auth";
 
-export default function PrivyScaffoldProvider({ children }: { children: React.ReactNode }) {
+export const PrivyScaffoldProvider = ({ children }: PropsWithChildren) => {
   return (
     <PrivyProvider
-      appId="your-app-id" //update this to {process.env.NEXT_PUBLIC_PRIVY_API_KEY}
+      appId="cm09stjha011x8j4lpu8gt9jt" //update this to {process.env.NEXT_PUBLIC_PRIVY_API_KEY}
       config={{
         // Customize Privy's appearance in your app
         appearance: {
